@@ -2,7 +2,6 @@
 class ZigAnalyzer < Formula
   desc "Zig language server with compiler diagnostics and comptime-aware analysis"
   homepage "https://github.com/jinzhongjia/zig-analyzer"
-  version "0.1.1"
   license "MIT"
 
   livecheck do
@@ -33,9 +32,11 @@ class ZigAnalyzer < Formula
   end
 
   def install
-    bin.install "zig-analyzer"
-    # The debug information of stack traces, read next to the executable
-    bin.install "zig-analyzer.dSYM" if OS.mac?
+    # The debug information of stack traces is read next to the executable, after resolving
+    # symlinks: both go into libexec, which holds no other executables
+    libexec.install "zig-analyzer"
+    libexec.install "zig-analyzer.dSYM" if OS.mac?
+    bin.install_symlink libexec/"zig-analyzer"
   end
 
   def caveats
