@@ -11,23 +11,23 @@ class ZigAnalyzer < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jinzhongjia/zig-analyzer/releases/download/v0.5.0/zig-analyzer-v0.5.0-aarch64-macos-ReleaseSafe.tar.gz"
-      sha256 "5795fbf42f0b8e2475dca132c4d889f721ba92e9579a98cbd45bf838a62e5f8d"
+      url "https://github.com/jinzhongjia/zig-analyzer/releases/download/v0.5.1/zig-analyzer-v0.5.1-aarch64-macos-ReleaseSafe.tar.gz"
+      sha256 "8e8c7dcf8e515449b1d197f78ecfdeddf5b7b288016eb68aeb079f2b2a0b97b8"
     end
     on_intel do
-      url "https://github.com/jinzhongjia/zig-analyzer/releases/download/v0.5.0/zig-analyzer-v0.5.0-x86_64-macos-ReleaseSafe.tar.gz"
-      sha256 "55abdf2c1f4b3f998ac904acd678ac2805650d1c0f83a61cf7732d100df8f4a0"
+      url "https://github.com/jinzhongjia/zig-analyzer/releases/download/v0.5.1/zig-analyzer-v0.5.1-x86_64-macos-ReleaseSafe.tar.gz"
+      sha256 "01d20752b830fd7023a94d5468dbab60d566f3d3c87a42bc5d3ef78775b0d7e3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jinzhongjia/zig-analyzer/releases/download/v0.5.0/zig-analyzer-v0.5.0-aarch64-linux-ReleaseSafe.tar.gz"
-      sha256 "4dc121d7356e7a1733c531b8a5408548c3ec5a304174b355975a7df382f03fef"
+      url "https://github.com/jinzhongjia/zig-analyzer/releases/download/v0.5.1/zig-analyzer-v0.5.1-aarch64-linux-ReleaseSafe.tar.gz"
+      sha256 "922baef6275ee4046c9ac5d126111c847852e0b110488fd1f450ae019cb51636"
     end
     on_intel do
-      url "https://github.com/jinzhongjia/zig-analyzer/releases/download/v0.5.0/zig-analyzer-v0.5.0-x86_64-linux-ReleaseSafe.tar.gz"
-      sha256 "2629cf38db50f1d095cd8a5c66612fef0bf9ba6d1ec4ebb7c9a0e910ca08ebdf"
+      url "https://github.com/jinzhongjia/zig-analyzer/releases/download/v0.5.1/zig-analyzer-v0.5.1-x86_64-linux-ReleaseSafe.tar.gz"
+      sha256 "8d92f33d96e07f97e8244c3643a1517df18d93cc08d9e1eebe0c3a2bc3ad6db8"
     end
   end
 
